@@ -1,0 +1,12 @@
+# Java
+*.class
+bin/
+target/
+build/
+
+# Mac
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
