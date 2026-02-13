@@ -11,7 +11,7 @@ public class misPracticas {
 
         // practica 1: mostrar por consola un mensaje mediante el SYSO
 
-        System.out.println("Hola mundo");
+        System.out.println("Hola mundo.");
         System.out.println();
 
     }
