@@ -6,8 +6,9 @@ public class misPracticas {
 
     Scanner sc = new Scanner(System.in); // este es un objeto de "clase Scanner" que utiliza la consola para
                                          // ingresar la info
+                                         
 
-    public void practica1() {
+    public static void practica1() {
 
         // practica 1: mostrar por consola un mensaje mediante el SYSO
 
@@ -16,7 +17,8 @@ public class misPracticas {
 
     }
 
-    public void practica2() {
+    public static void practica2() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 2: pedir por consola el nombre y edad de una persona y mostrarlo
 
@@ -27,10 +29,12 @@ public class misPracticas {
 
         System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad + " años.");
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica3() {
+    public static void practica3() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 3: conversor de monedas mediante operador
 
@@ -39,11 +43,12 @@ public class misPracticas {
         double pesosmx = dolares * 17.80;
         System.out.println(dolares + " dolares equivalen a " + pesosmx + " pesos mexicanos.");
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica4() {
-
+    public static void practica4() {
+        Scanner sc = new Scanner(System.in);
         // prectica 4: area de un triangulo
 
         System.out.println("Ingresa el valor de la base del triangulo:");
@@ -54,10 +59,12 @@ public class misPracticas {
         System.out.println("Un triangulo de base " + basetriangulo + " y altura " + alturatriangulo
                 + " tiene un área de: " + areatriangulo + " cm2.");
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica5() {
+    public static void practica5() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 5: calculadora de enteros (suma, resta, multiplicación y división) y
         // controlar las excepciones mediante bloques try-catch
@@ -103,10 +110,12 @@ public class misPracticas {
             System.out.println("La divión por 0 es indefinida.");
         }
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica6() {
+    public static void practica6() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 6: número negativo y multiplo de 3
 
@@ -127,10 +136,12 @@ public class misPracticas {
 
         }
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica7() {
+    public static void practica7() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 7: nota final
 
@@ -170,10 +181,12 @@ public class misPracticas {
             System.out.println("Extraordinario.");
         }
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica8() {
+    public static void practica8() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 8: precio total de compra
 
@@ -213,10 +226,12 @@ public class misPracticas {
             System.out.println("Se debe pagar un total de: " + totalfinal + ".");
         }
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica9() {
+    public static void practica9() {
+        Scanner sc = new Scanner(System.in);
 
         // pracrtica 9: Dias de la semana (determinar si el dia de la semna ingresado es
         // laborable o no)
@@ -259,10 +274,11 @@ public class misPracticas {
                 break;
         }
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica10() {
+    public static void practica10() {
 
         // practica 10: multiplos de 5 entre dos números
 
@@ -276,7 +292,8 @@ public class misPracticas {
 
     }
 
-    public void practica11() {
+    public static void practica11() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 11: contador de altura
 
@@ -320,16 +337,18 @@ public class misPracticas {
         System.out.println("El promedio de altura en el grupo es: " + estaturturapromedio);
 
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica12() {
+    public static void practica12() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 12: cuenta pares e impares con While
 
         int contpares = 0, contimpares = 0, number;
 
-        System.out.println("Introduce un numero entero:");
+        System.out.println("Introduce un numero entero (termino si ingresas un 0):");
         try {
             number = sc.nextInt();
         } catch (Exception ex) {
@@ -360,10 +379,12 @@ public class misPracticas {
         System.out.println("Se introdujeron " + contpares + " números pares y " + contimpares + " números impares.");
 
         System.out.println();
+        sc.close();
 
     }
 
-    public void practica13() {
+    public static void practica13() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 13: Nota máxima y nota mínima
         double calificacion, calimax = -1, calimin = 11;
@@ -400,7 +421,8 @@ public class misPracticas {
 
     }
 
-    public void practica14() {
+    public static void practica14() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 14: Numero de espacios en una cadena
 
@@ -421,22 +443,24 @@ public class misPracticas {
 
         System.out.println("La cadena contiene " + contespacios + " espacios en blanco.");
         System.out.println();
-
+sc.close();
     }
 
-    public void practica15() {
+    public static void practica15() {
+        Scanner sc = new Scanner(System.in);
 
         // practica 15: Validar una contraseña
 
-        System.out.println("Ingresa una contraseña de 10 a 20 caracteres e incluye almenos uno de estos caracteres: @, *, -:");
+        System.out.println(
+                "Ingresa una contraseña de 10 a 20 caracteres e incluye almenos uno de estos caracteres: @, *, -:");
         String contraseña = sc.nextLine();
         boolean contraseñavalida = false;
-        
-        if (contraseña.length()>=10 && contraseña.length()<=20) {
 
-            for (int i=0; i<=contraseña.length(); i++){
+        if (contraseña.length() >= 10 && contraseña.length() <= 20) {
 
-                if (contraseña.charAt(i)=='@' || contraseña.charAt(i)=='*' || contraseña.charAt(i)=='-') {
+            for (int i = 0; i <= contraseña.length(); i++) {
+
+                if (contraseña.charAt(i) == '@' || contraseña.charAt(i) == '*' || contraseña.charAt(i) == '-') {
                     contraseñavalida = true;
 
                 }
@@ -446,26 +470,36 @@ public class misPracticas {
 
                 System.out.println("La contraseñsa es valida.");
             }
-     
+
         } else {
 
-                System.out.println("La contraseña no es de 10 a 20 caracteres.");
+            System.out.println("La contraseña no es de 10 a 20 caracteres.");
 
-            }
+        }
+        sc.close();
     }
 
-    public void practica16() {
-        //practica 16: palabra palindromo
+    public static void practica16() {
+        Scanner sc = new Scanner(System.in);
+        // practica 16: palabra palindromo
 
         System.out.println("Ingresa una cadena:");
         String palabra = sc.nextLine();
         String palabra2 = "";
 
-        for (int i=palabra.length()-1; i >=0; i --){
+        for (int i = palabra.length() - 1; i >= 0; i--) {
             char lugar = palabra.charAt(i);
             palabra2 = palabra2 + lugar;
         }
 
+        if (palabra.equals(palabra2)) {
+
+            System.out.println("La cadena es un palindromo.");
+
+        } else {
+            System.out.println("La cadena no es un palindrimo");
+        }
+        sc.close();
 
     }
 
