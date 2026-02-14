@@ -13,9 +13,7 @@ public class Primitivos {
         otras();
         practicas();
 
-        
     }
-    
 
     public static void otras() {
         boolean conducir;
@@ -55,11 +53,11 @@ public class Primitivos {
         mayorDeEdad = true; // esta es la inicializacion de la variable
     }
 
-    public static void practicas (){
+    public static void practicas() {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Ingresa el número de la practica (entre 1 y 16)");
+        System.out.println("Ingresa el número de la practica (entre 1 y 17)");
 
         int practica = sc.nextInt();
 
@@ -126,6 +124,9 @@ public class Primitivos {
 
             case 16:
                 misPracticas.practica16();
+                break;
+            case 17:
+                misPracticas.practica17();
                 break;
 
             default:

@@ -503,4 +503,25 @@ sc.close();
 
     }
 
+    public static void practica17(){
+
+        Scanner sc = new Scanner(System.in);
+
+        // practica 17: Array de numeros aleatorios, impresion de cada uno y la suma de ellos
+
+        int[] array = new int[10];
+        for (int i=0; i<array.length;i++){
+            array[i] = (int)Math.floor(Math.random()*10+1);
+
+        }
+        int suma = 0;
+
+    for (int i=0; i<array.length; i++){
+        System.out.print(array[i]+" ");
+        suma = suma +array[i];
+    }
+    System.out.println("La suma de todos los valores es: "+suma);
+        sc.close();
+    }
+
 }
