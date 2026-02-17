@@ -6,6 +6,7 @@ public class misPracticas {
 
     Scanner sc = new Scanner(System.in); // este es un objeto de "clase Scanner" que utiliza la consola para
                                          // ingresar la info
+                                         
 
     public static void practica1() {
 
@@ -421,7 +422,6 @@ public class misPracticas {
     }
 
     public static void practica14() {
-
         Scanner sc = new Scanner(System.in);
 
         // practica 14: Numero de espacios en una cadena
