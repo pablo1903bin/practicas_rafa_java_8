@@ -131,6 +131,9 @@ public class Primitivos {
             case 18:
                 misPracticas.pracrtica18();
                 break;
+            case 19:
+                misPracticas.pracrtica19();
+                break;
 
             default:
                 System.out.println("No existe practica para ese numero.");

@@ -6,7 +6,6 @@ public class misPracticas {
 
     Scanner sc = new Scanner(System.in); // este es un objeto de "clase Scanner" que utiliza la consola para
                                          // ingresar la info
-                                         
 
     public static void practica1() {
 
@@ -422,6 +421,7 @@ public class misPracticas {
     }
 
     public static void practica14() {
+
         Scanner sc = new Scanner(System.in);
 
         // practica 14: Numero de espacios en una cadena
@@ -586,6 +586,28 @@ public class misPracticas {
         }
 
         sc.close();
+    }
+
+    public static void pracrtica19 () {
+
+        // practica 19: alumnos promocionados
+
+       String[][] grupoA = {{"Rafael","8","8"},{"Rocha","9","9"},{"Rosas",}};
+
+       for(int f = 0; f < grupoA.length; f++){
+
+        for(int c = 0; c < grupoA[c].length; c++){
+
+            double notaFinal = (Double.parseDouble(grupoA[f][1])*0.4)+ (Double.parseDouble(grupoA[f][2]))*0.6;
+
+            System.out.println("El alumno: "+ grupoA[f][0]+ "tuvo una calificación final de "+ notaFinal+ ".");
+
+        }
+       }
+
+
+
+
     }
 
 }
