@@ -1,18 +1,54 @@
-## Getting Started
+🚀 Prácticas de Java: De Cero a Avanzado
+¡Bienvenido al repositorio de aprendizaje! Este espacio está dedicado a documentar el progreso, los ejercicios y los proyectos realizados durante el curso de Java 8. El objetivo es dominar desde la sintaxis básica hasta las características más potentes de la programación funcional y la Programación Orientada a Objetos (POO).
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+📂 Estructura del Proyecto
+El repositorio está organizado por módulos para facilitar la navegación:
 
-## Folder Structure
+01-Fundamentos: Variables, tipos de datos, operadores y estructuras de control (if, switch, for, while).
 
-The workspace contains two folders by default, where:
+02-POO-Basica: Creación de clases, objetos, métodos y constructores.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+03-POO-Avanzada: Herencia, polimorfismo, interfaces y clases abstractas.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+04-Excepciones: Manejo de errores con bloques try-catch-finally.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+05-Colecciones: Uso de List, Set, Map y algoritmos de ordenamiento.
 
-## Dependency Management
+06-Java8-Features: La joya de la corona: Expresiones Lambda, Streams API y Optional.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+🛠️ Requisitos Técnicos
+Para ejecutar estos ejercicios, necesitarás:
+
+JDK 8: Asegúrate de tener instalada la versión 1.8.
+
+IDE: Se recomienda IntelliJ IDEA, Eclipse o VS Code con el Java Extension Pack.
+
+Git: Para clonar y subir tus propios cambios.
+
+Nota: Aunque existan versiones más recientes de Java, dominar la versión 8 es fundamental, ya que introdujo cambios de paradigma que se siguen usando en toda la industria.
+
+🚀 Cómo ejecutar las prácticas
+Clona el repositorio:
+
+Bash
+git clone https://github.com/tu-usuario/practicas-con-java-8.git
+Importa el proyecto en tu IDE favorito.
+
+Navega hasta la clase que deseas probar.
+
+Ejecuta el método main.
+
+📈 Roadmap de Aprendizaje
+A medida que avances, marca tus logros:
+
+[ ] Sintaxis básica y tipos de datos.
+
+[ ] Estructuras de decisión y bucles.
+
+[ ] Conceptos de POO (Encapsulamiento, Herencia, Polimorfismo).
+
+[ ] Manejo de Colecciones y Genéricos.
+
+[ ] Lambdas y Streams (Java 8).
+
+[ ] Entrada/Salida de datos (I/O) y manejo de archivos.
