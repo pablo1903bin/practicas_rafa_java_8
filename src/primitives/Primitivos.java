@@ -57,7 +57,7 @@ public class Primitivos {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Ingresa el número de la practica (entre 1 y 18)");
+        System.out.println("Ingresa el número de la practica (entre 1 y 19)");
 
         int practica = sc.nextInt();
 
@@ -129,17 +129,18 @@ public class Primitivos {
                 misPracticas.practica17();
                 break;
             case 18:
-                misPracticas.pracrtica18();
+                misPracticas.practica18();
                 break;
             case 19:
-                misPracticas.pracrtica19();
+                misPracticas.practica19();
                 break;
 
             default:
                 System.out.println("No existe practica para ese numero.");
                 break;
         }
+
+
     }
 
 }
-//
