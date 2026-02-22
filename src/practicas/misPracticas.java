@@ -6,7 +6,6 @@ public class misPracticas {
 
     Scanner sc = new Scanner(System.in); // este es un objeto de "clase Scanner" que utiliza la consola para
                                          // ingresar la info
-                                         
 
     public static void practica1() {
 
@@ -415,13 +414,15 @@ public class misPracticas {
 
         }
 
-        System.out.println("La calificación más alta es " + calimax + " y la calificación más baja es " + calimin + ".");
+        System.out
+                .println("La calificación más alta es " + calimax + " y la calificación más baja es " + calimin + ".");
 
         sc.close();
 
     }
 
     public static void practica14() {
+
         Scanner sc = new Scanner(System.in);
 
         // practica 14: Numero de espacios en una cadena
@@ -462,7 +463,6 @@ public class misPracticas {
         if (contraseña.length() >= 10 && contraseña.length() <= 20) {
 
             contraseñavalida = validaCaracteresEspecialesEnContraseña(contraseña);
-
 
             if (contraseñavalida) {
 
@@ -547,7 +547,7 @@ public class misPracticas {
         sc.close();
     }
 
-    public static void pracrtica18(){
+    public static void practica18() {
 
         // practica 18: temoeratura semanal, promedio y si hubo una menor a 0°
 
@@ -556,36 +556,66 @@ public class misPracticas {
         double suma = 0;
         boolean menorCeroGrados = false;
 
-        for (int i=0; i<temperatura.length; i++){
+        for (int i = 0; i < temperatura.length; i++) {
 
-            System.out.println("Ingresa la temperatura del día "+ (i+1));
+            System.out.println("Ingresa la temperatura del día " + (i + 1));
 
             temperatura[i] = sc.nextDouble();
 
-            if (temperatura[i] <0){
+            if (temperatura[i] < 0) {
 
                 menorCeroGrados = true;
             }
-            
+
         }
 
-        for (int i = 0; i<temperatura.length; i++){
+        for (int i = 0; i < temperatura.length; i++) {
 
             suma = suma + temperatura[i];
         }
 
+        double promedioTemperatura = suma / temperatura.length;
 
-        double promedioTemperatura = suma/temperatura.length;
+        System.out.println("La temperatura promedio de la sema es de: " + promedioTemperatura +"°.");
 
-        System.out.println("La temperatura promedio de la sema es de: "+promedioTemperatura);
-
-        if (menorCeroGrados){
+        if (menorCeroGrados) {
 
             System.out.println("Hubo un día con una temperatura menor a 0°.");
-            
+
         }
 
         sc.close();
+    }
+
+    public static void practica19() {
+
+        // practica 19: alumnos promocionados
+
+        String[][] grupoA = { { "Rafael", "8", "8", "8" }, { "Rocha", "9", "9", "9" }, { "Rosas", "10", "10", "10" } };
+        boolean[] aprobado = new boolean[grupoA.length];
+
+        for (int f = 0; f < grupoA.length; f++) {
+            for (int c = 0; c < grupoA[f].length; c++) {
+
+                double notaTeorias = ((Double.parseDouble(grupoA[f][1])) + (Double.parseDouble(grupoA[f][2]))) / 2;
+                double notaFinal = notaTeorias * 0.4 + (Double.parseDouble(grupoA[f][3])) * 0.6;
+
+                if (notaFinal >= 6) {
+                    aprobado[f] = true;
+                } else {
+                    aprobado[f] = false;
+                }
+            }
+        }
+
+        for (int i = 0; i < grupoA.length; i++) {
+            if (aprobado[i]) {
+                System.out.println("El alumno " + grupoA[i][0] + " ha aprobado.");
+            }
+            else {
+                System.out.println("El alumno " + grupoA[i][0] + " ha reprobado.");
+            }
+        }
     }
 
 }
