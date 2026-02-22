@@ -1,5 +1,7 @@
 package practicas;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class misPracticas {
@@ -576,7 +578,7 @@ public class misPracticas {
 
         double promedioTemperatura = suma / temperatura.length;
 
-        System.out.println("La temperatura promedio de la sema es de: " + promedioTemperatura +"°.");
+        System.out.println("La temperatura promedio de la sema es de: " + promedioTemperatura + "°.");
 
         if (menorCeroGrados) {
 
@@ -591,28 +593,45 @@ public class misPracticas {
 
         // practica 19: alumnos promocionados
 
-        String[][] grupoA = { { "Rafael", "8", "8", "8" }, { "Rocha", "9", "9", "9" }, { "Rosas", "10", "10", "10" } };
+        String[][] grupoA = { { "Nombre", "Español", "Matea", "Ciencias"}, 
+                              { "Manuel",    "9",      "8",      "10" },  
+                              { "Rafa",      "7",      "9",       "9" },
+                              { "Jose",      "10",     "10",     "10" } 
+       };
+
         boolean[] aprobado = new boolean[grupoA.length];
 
-        for (int f = 0; f < grupoA.length; f++) {
-            for (int c = 0; c < grupoA[f].length; c++) {
+        for (int fila = 0; fila < grupoA.length; fila++) {
 
-                double notaTeorias = ((Double.parseDouble(grupoA[f][1])) + (Double.parseDouble(grupoA[f][2]))) / 2;
-                double notaFinal = notaTeorias * 0.4 + (Double.parseDouble(grupoA[f][3])) * 0.6;
+            if (fila == 0) {
+                System.out.println("Calculando la nota final del alumno " + Arrays.toString(grupoA[0])  + "...");
+                System.out.println("Esta es la primera fila que contiene los nombres de los campos y no se tomará en cuenta para el cálculo de las notas.");
+                continue;
+            }
 
-                if (notaFinal >= 6) {
-                    aprobado[f] = true;
-                } else {
-                    aprobado[f] = false;
-                }
+            System.out.println(grupoA[fila][0]);
+
+            for (int campo = 0; campo < grupoA[fila].length; campo++) {
+
+               
+                    double notaTeorias = ((Double.parseDouble(grupoA[fila][1])) + (Double.parseDouble(grupoA[fila][2])))  / 2;
+                    double notaFinal = notaTeorias * 0.4 + (Double.parseDouble(grupoA[fila][3])) * 0.6;
+
+                    if (notaFinal >= 6) {
+                        aprobado[fila] = true;
+                    } else {
+                        aprobado[fila] = false;
+                    }
+
+                
+
             }
         }
 
         for (int i = 0; i < grupoA.length; i++) {
             if (aprobado[i]) {
                 System.out.println("El alumno " + grupoA[i][0] + " ha aprobado.");
-            }
-            else {
+            } else {
                 System.out.println("El alumno " + grupoA[i][0] + " ha reprobado.");
             }
         }
