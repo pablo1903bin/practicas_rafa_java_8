@@ -7,10 +7,7 @@ import practicas.*;
 public class Primitivos {
 
     public static void main(String[] args) {
-
-        System.out.println("Hello");
-
-        otras();
+       
         practicas();
 
     }
