@@ -551,7 +551,7 @@ public class misPracticas {
 
     public static void practica18() {
 
-        // practica 18: temoeratura semanal, promedio y si hubo una menor a 0°
+        // practica 18: temperatura semanal, promedio y si hubo una menor a 0°
 
         Scanner sc = new Scanner(System.in);
         double[] temperatura = new double[7];
