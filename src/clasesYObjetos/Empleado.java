@@ -94,7 +94,7 @@ public class Empleado {
 
     @Override
     public String toString() {
-        return "Empleado [nombre=" + nombre + ", numTrabajador=" + numTrabajador + ", salario=" + salario
+        return "Empleado [nombre=" + nombre + ", numTrabajador=" + numTrabajador + ", salario=" + salario + ". "
                 + nacionalidad.toString() + "]";
     }
 
